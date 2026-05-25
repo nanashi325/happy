@@ -371,8 +371,14 @@
       $(".letter__border").slideUp();
     });
   </script>
-  <audio autoplay loop>
-  <source src="sound_ya.mp3" type="audio/mpeg">
+<audio controls loop>
+    <source src="sound_ya.mp3" type="audio/mpeg">
+  
+<script>
+  document.addEventListener('click', function() {
+    document.querySelector('audio').play();
+  }, { once: true });
+</script>
 </audio>
 </body>
 </html>
